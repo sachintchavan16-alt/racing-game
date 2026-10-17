@@ -1,0 +1,32 @@
+{
+  "name": "jungle-rider",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Jungle Rider - a lightweight 3D bike racing game for Android built with Three.js, Vite and Capacitor.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "smoke": "node scripts/smoke-test.mjs",
+    "size": "node scripts/size-check.mjs",
+    "assets": "node scripts/make-assets.mjs",
+    "verify": "npm run smoke && npm run build && npm run size",
+    "cap:add": "cap add android",
+    "cap:sync": "npm run build && cap sync android",
+    "cap:open": "cap open android",
+    "android:debug": "npm run build && cap sync android && cd android && gradlew.bat assembleDebug",
+    "android:release": "npm run build && cap sync android && cd android && gradlew.bat assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.2.2",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.2",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.2",
+    "vite": "^5.4.11"
+  }
+}

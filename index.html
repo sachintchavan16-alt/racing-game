@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b1d10" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Jungle Rider</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <div id="ui-root"></div>
+
+      <div id="boot" class="boot">
+        <div class="boot__inner">
+          <h1 class="boot__title">JUNGLE<span>RIDER</span></h1>
+          <p class="boot__sub">Jungle &rarr; Mud &rarr; River &rarr; Mountain &rarr; Summit &rarr; Descent</p>
+          <div class="boot__bar"><i id="boot-bar"></i></div>
+          <p class="boot__status" id="boot-status">Loading engine&hellip;</p>
+          <button id="boot-start" class="btn btn--primary" disabled>START RIDE</button>
+          <p class="boot__hint">Tip: rotate your phone to landscape. A gamepad or keyboard also works.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
