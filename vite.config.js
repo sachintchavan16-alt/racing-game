@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: '/racing-game/',
   build: {
     target: 'es2019',
     outDir: 'dist',
